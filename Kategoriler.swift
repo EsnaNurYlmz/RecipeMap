@@ -6,3 +6,18 @@
 //
 
 import Foundation
+
+class Kategoriler {
+    
+    var kategoriAd : String?
+    var kategoriId : String?
+    
+    
+    init(kategoriAd: String , kategoriId: String) {
+        self.kategoriAd = kategoriAd
+        self.kategoriId = kategoriId
+    }
+    
+}
+
+
