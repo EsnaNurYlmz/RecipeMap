@@ -53,7 +53,8 @@ class YemeklerViewController: UIViewController {
                         let yemekResim = dictionary["yemekResim"] as? String ?? ""
                         let yemekTarif = dictionary["yemekTarif"] as? String ?? ""
                         let  kategoriAd = dictionary["kategoriAd"] as? String ?? ""
-                        let yemek = Yemekler(yemekAd: yemekAd, yemekResim: yemekResim, yemekTarif: yemekTarif, kategoriAd: kategoriAd)
+                        let  yemekMalzeme = dictionary["yemekMalzeme"] as? String ?? ""
+                        let yemek = Yemekler(yemekAd: yemekAd, yemekResim: yemekResim, yemekTarif: yemekTarif, kategoriAd: kategoriAd, yemekMalzeme: yemekMalzeme)
                         self.yemekListesi.append(yemek)
                       }
                     }
